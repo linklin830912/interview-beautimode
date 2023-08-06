@@ -8,10 +8,9 @@ type switchSvgProps = {
 }
 
     const props = defineProps<switchSvgProps>();
-    const emits = defineEmits<{(e:"click", value:boolean)}>();
-    const isInService = ref<boolean>(props.isChecked);
-    const handleOnChange = (e) => {
-            emits("click", e);
+    const emits = defineEmits<{(e:"onClick", value:boolean)}>();
+    const handleOnChange = (e:boolean) => {
+        emits("onClick", e);
     }
 </script>
 
@@ -35,7 +34,7 @@ type switchSvgProps = {
                 </svg>
             </template>
         </a-switch>
-        <div>{{ isInService? props.defaultIfChecked:props.defaultIfUnchecked }}</div>
+        <div>{{ props.isChecked? props.defaultIfChecked:props.defaultIfUnchecked }}</div>
     </div>
 </template>
 

@@ -38,7 +38,7 @@ const handleSelectedIndexesChanges = (selectedIndexes: number[]) => {
     </td>
     <td>
         <div class="switch_div">
-            <SwitchSvg @click="handleOnClick" 
+            <SwitchSvg @onClick="handleOnClick" 
                 :isChecked="isChecked"
                 :defaultIfChecked="'本日供餐'" 
                 :defaultIfUnchecked="'本日不供餐'"/>      

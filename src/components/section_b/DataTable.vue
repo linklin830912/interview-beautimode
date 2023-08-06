@@ -18,7 +18,7 @@ export default defineComponent({
 <template>
     <div class="data_div">
     <div  v-for="key in Object.keys(props.timeService)" :key="key">
-        <h6>{{ key }} : {{ props.timeService[key] }}</h6>
+        <h6>{{ key }} : {{ props.timeService[key as keyof TimeService] }}</h6>
     </div>
 </div>
 </template>
