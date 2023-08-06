@@ -63,7 +63,7 @@ import { isEmpty } from 'lodash-es'
           const value = computed({
             get: () => props.modelValue,
             set: (val) => {
-              switch (true) {
+              switch (true) { //!!!
                 case props.disabled:
                   break
                 case props.type === 'number':
@@ -83,7 +83,7 @@ import { isEmpty } from 'lodash-es'
             },
           })
 
-          const isShowPassword = ref(false)
+          const isShowPassword = ref(false) //!!!
           const isFocus = ref(false)
 
           const isError = inject(isFieldError, readonly(computed(() => false)))

@@ -84,9 +84,9 @@ export default defineComponent({
       default: true,
     },
   },
-  emits: ['update:modelValue'],
+  emits: ['update:modelValue'],//!!!
   setup(props, { emit }) {
-    // set css var
+    // set css var !!!
     const style = computed(() => ({
       activeColor: `var(--${props.activeColor}-color)`,
       disactiveColor: `var(--${props.disActiveColor}-color)`,
