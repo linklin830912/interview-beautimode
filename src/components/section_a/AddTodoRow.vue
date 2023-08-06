@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref, defineComponent } from 'vue';
-import { postTodoData } from "../apis/fetchTodoData"
+import { postTodoData } from "../../apis/fetchTodoData"
 import EditableInput from "./EditableInput.vue"
-import Todo from "../models/Todo"
+import Todo from "../../models/Todo"
 
 const emits = defineEmits<{(e:'handleAddClick', todo: Todo):void}>()
 

@@ -1,23 +1,27 @@
 <script setup lang="ts">
-import TodoTable from "./components/TodoTable.vue";
+// import TodoTable from "./components/TodoTable.vue";
 </script>
 
 <template>
-  <TodoTable :start="5" :end="10" />
+  <div class="view_div">
+    <h3>
+      <router-link to="/section-a">SectionA</router-link>
+    <span> / </span>
+      <router-link to="/section-b">SectionB</router-link>    
+    </h3>
+  </div>
+  <router-view></router-view>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.view_div  {
+  width: 100%;
+  text-align: start;
+  margin: 50px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.view_div span {
+font-size: 12px;
+margin: 10px;
 }
 </style>
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { reactive, defineComponent } from "vue";
 import Todo from "src/models/Todo";
-import { putTodoData, deleteTodoData } from "../apis/fetchTodoData";
+import { putTodoData, deleteTodoData } from "../../apis/fetchTodoData";
 import EditableInput from "./EditableInput.vue"
 
 type todoRowProps = {

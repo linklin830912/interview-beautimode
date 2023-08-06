@@ -2,8 +2,8 @@
 import { onMounted, ref } from "vue";
 import TodoRow from "./TodoRow.vue";
 import  AddTodoRow  from "./AddTodoRow.vue";
-import { getTodoData } from "../apis/fetchTodoData";
-import Todo from "../models/Todo";
+import { getTodoData } from "../../apis/fetchTodoData";
+import Todo from "../../models/Todo";
 
 type todoTableProps = {
   start: number;
