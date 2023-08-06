@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, defineComponent } from 'vue';
+import { defineComponent } from 'vue';
 
 type switchSvgProps = {
     defaultIfChecked?: string,
@@ -8,7 +8,7 @@ type switchSvgProps = {
 }
 
     const props = defineProps<switchSvgProps>();
-    const emits = defineEmits<{(e:"onClick", value:boolean)}>();
+    const emits = defineEmits<{(e:"onClick", value:boolean):void}>();
     const handleOnChange = (e:boolean) => {
         emits("onClick", e);
     }
