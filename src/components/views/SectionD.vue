@@ -1,5 +1,5 @@
 <template>
-    <div>code review only</div>
+    <div>show comments in repo</div>
 </template>
 <!-- 
 <template>
