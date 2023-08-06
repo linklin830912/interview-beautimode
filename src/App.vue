@@ -7,7 +7,11 @@
     <h3>
       <router-link to="/section-a">SectionA</router-link>
     <span> / </span>
-      <router-link to="/section-b">SectionB</router-link>    
+      <router-link to="/section-b">SectionB</router-link>
+      <span> / </span>
+      <router-link to="/section-c">SectionC</router-link>    
+      <span> / </span>
+      <router-link to="/section-d">SectionD</router-link>    
     </h3>
   </div>
   <router-view></router-view>
